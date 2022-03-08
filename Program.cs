@@ -8,12 +8,14 @@ namespace Lab1dotNet
 {
     internal class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("Eneter the number:" + Environment.NewLine);
             int n = int.Parse(Console.ReadLine());
             Console.WriteLine("Enter the seed:" + Environment.NewLine);
             int seed = int.Parse(Console.ReadLine());
+            Generator g = new Generator(n, seed);
+            Console.Write(g.ToString());
             
 
         }
