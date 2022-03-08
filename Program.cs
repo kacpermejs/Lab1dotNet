@@ -10,6 +10,12 @@ namespace Lab1dotNet
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Eneter the number:" + Environment.NewLine);
+            int n = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the seed:" + Environment.NewLine);
+            int seed = int.Parse(Console.ReadLine());
+            
+
         }
     }
 }
