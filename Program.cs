@@ -15,7 +15,8 @@ namespace Lab1dotNet
             Console.WriteLine("Enter the seed:" + Environment.NewLine);
             int seed = int.Parse(Console.ReadLine());
             Generator g = new Generator(n, seed);
-            Console.Write(g.ToString());
+            Console.Write(g);
+            Console.ReadLine();
             
 
         }

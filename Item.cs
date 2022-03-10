@@ -8,23 +8,22 @@ namespace Lab1dotNet
 {
     public class Item
     {
-        int value;
-        int weight;
+        
 
         public int Value { set; get; }
         public int Weight { set; get; }
 
         public Item(int v, int w)
         {
-            value = v;
-            weight = w;
+            Value = v;
+            Weight = w;
         }
         
 
 
         public override string ToString()
         {
-            string str = Value + " " + Weight;
+            string str = Value + "\t|\t" + Weight;
 
             return str;
         }

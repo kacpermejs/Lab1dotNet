@@ -8,14 +8,14 @@ namespace Lab1dotNet
 {
     public class Generator
     {
-        public List<Item> numbers;
+        public List<Item> items;
 
         public Generator(int n, int seed)
         {
-            numbers = new List<Item>();
+            items = new List<Item>();
             Random random = new Random(seed);
             for (int i = 0; i < n; i++)
-                numbers.Add(new Item(random.Next(30), random.Next(30)));
+                items.Add(new Item(random.Next(30), random.Next(30)));
 
 
         }
@@ -23,13 +23,14 @@ namespace Lab1dotNet
         public override string ToString()
         {
 
-            string[] lista = { "a", "b" };
-            string str = string.Join("\n", lista);
+            string str = "Value\t|\tWeight\n";
 
-            for(int i = 0; i < numbers.Count; i++)
+            for (int i = 0; i < items.Count(); i++)
             {
-                str.Concat(numbers[i].ToString(), "\n");
+                str += items[i].ToString() + "\n";
             }
+            
+            
 
             
 
