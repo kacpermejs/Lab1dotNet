@@ -10,12 +10,22 @@ namespace Lab1dotNet
     {
         public static void Main(string[] args)
         {
+            
             Console.WriteLine("Eneter the number:" + Environment.NewLine);
             int n = int.Parse(Console.ReadLine());
             Console.WriteLine("Enter the seed:" + Environment.NewLine);
             int seed = int.Parse(Console.ReadLine());
             Generator g = new Generator(n, seed);
+            Backpack b = new Backpack();
+            
+
+            
+
+            b.Algorithm(g);
+            
             Console.Write(g);
+            Console.WriteLine("Backpack:");
+            Console.Write(b);
             Console.ReadLine();
             
 

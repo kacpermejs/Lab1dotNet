@@ -29,14 +29,14 @@ namespace Lab1dotNet
             {
                 str += items[i].ToString() + "\n";
             }
-            
-            
-
-            
 
             return str;
 
         }
 
+        public void Sort()
+        {
+            items.Sort();
+        }
     }
 }

@@ -12,9 +12,51 @@ namespace Lab1dotNet
     {
         public List<Item> contents;
 
+        int capacity = 200;
+
+        public Backpack()
+        {
+            contents = new List<Item>();
+        }
+
         public void AddItem(Item x)
         {
-            contents.Add(x);
+            if(capacity > x.Weight)
+            {
+                contents.Add(new Item(x));
+                capacity -= x.Weight;
+            }
+                
         }
+
+        public void Algorithm(Generator g)
+        {
+            g.Sort();
+            int i = 0;
+            while (capacity > g.items[i].Weight && i < g.items.Count() )
+            {
+                AddItem(g.items[i]);
+                i++;
+            }
+                
+
+        }
+
+        public override string ToString()
+        {
+
+            string str = "Value\t|\tWeight\t|\tRatio\n";
+            int sum = 0;
+            for (int i = 0; i < contents.Count(); i++)
+            {
+                str += contents[i].ToString() + "\n";
+                sum += contents[i].Value;
+            }
+            str += "Total value: " + sum + "\n";
+
+            return str;
+
+        }
+
     }
 }

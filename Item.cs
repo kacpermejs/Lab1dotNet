@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab1dotNet
 {
-    public class Item
+    public class Item: IComparable<Item>
     {
         
 
@@ -18,19 +18,38 @@ namespace Lab1dotNet
             Value = v;
             Weight = w;
         }
-        
 
+        public Item(Item i)
+        {
+            this.Value = i.Value;
+            this.Weight = i.Weight;
+        }
 
         public override string ToString()
         {
-            string str = Value + "\t|\t" + Weight;
+            string str = Value + "\t|\t" + Weight + "\t|\t" + (Weight != 0 ? (double)Value/Weight : 0);
 
             return str;
         }
 
-        
+        public int CompareTo(Item other)
+        {
+            double ratioT;
+            double ratioO;
 
+            if (other.Value == 0)
+                return other.Weight.CompareTo(this.Weight);
 
+            else if(this.Weight != 0 && other.Weight != 0)
+            {
+                ratioT = (double)this.Value/this.Weight;
+                ratioO = (double)other.Value/other.Weight;
 
+                return ratioO.CompareTo(ratioT);
+            }
+            else
+                return this.Weight.CompareTo(other.Weight);
+
+        }
     }
 }
