@@ -38,8 +38,6 @@ namespace Lab1dotNet
                 AddItem(g.items[i]);
                 i++;
             }
-                
-
         }
 
         public override string ToString()

@@ -15,7 +15,7 @@ namespace Lab1dotNet
             items = new List<Item>();
             Random random = new Random(seed);
             for (int i = 0; i < n; i++)
-                items.Add(new Item(random.Next(30), random.Next(30)));
+                items.Add(new Item(random.Next(n-1)+1, random.Next(n-1)+1));
 
 
         }
