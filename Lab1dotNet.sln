@@ -5,6 +5,8 @@ VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab1dotNet", "Lab1dotNet.csproj", "{0BF767B9-1FE4-49CA-89F7-8A12836BCD5C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "windowBackpack", "..\windowBackpack\windowBackpack.csproj", "{5FC9E8C0-4C73-48CE-8F32-3F9CD41BBD7E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{0BF767B9-1FE4-49CA-89F7-8A12836BCD5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0BF767B9-1FE4-49CA-89F7-8A12836BCD5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0BF767B9-1FE4-49CA-89F7-8A12836BCD5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FC9E8C0-4C73-48CE-8F32-3F9CD41BBD7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FC9E8C0-4C73-48CE-8F32-3F9CD41BBD7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FC9E8C0-4C73-48CE-8F32-3F9CD41BBD7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FC9E8C0-4C73-48CE-8F32-3F9CD41BBD7E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

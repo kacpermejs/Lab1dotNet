@@ -23,11 +23,11 @@ namespace Lab1dotNet
         public override string ToString()
         {
 
-            string str = "Value\t|\tWeight\n";
+            string str = "Value\t|\tWeight\t|\tRatio" + Environment.NewLine;
 
             for (int i = 0; i < items.Count(); i++)
             {
-                str += items[i].ToString() + "\n";
+                str += items[i].ToString() + Environment.NewLine;
             }
 
             return str;

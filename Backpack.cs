@@ -43,14 +43,14 @@ namespace Lab1dotNet
         public override string ToString()
         {
 
-            string str = "Value\t|\tWeight\t|\tRatio\n";
+            string str = "Value\t|\tWeight\t|\tRatio" + Environment.NewLine;
             int sum = 0;
             for (int i = 0; i < contents.Count(); i++)
             {
-                str += contents[i].ToString() + "\n";
+                str += contents[i].ToString() + Environment.NewLine;
                 sum += contents[i].Value;
             }
-            str += "Total value: " + sum + "\n";
+            str += "Total value: " + sum + Environment.NewLine;
 
             return str;
 
