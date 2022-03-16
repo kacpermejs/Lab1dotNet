@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab1dotNet", "Lab1dotNet.cs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "windowBackpack", "windowBackpack\windowBackpack.csproj", "{5FC9E8C0-4C73-48CE-8F32-3F9CD41BBD7E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{AE72F58D-FB7F-4705-82C3-96BD4EA137B1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestyJednostkowe", "UnitTestProject1\TestyJednostkowe.csproj", "{AE72F58D-FB7F-4705-82C3-96BD4EA137B1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
