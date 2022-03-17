@@ -32,7 +32,7 @@ namespace Lab1dotNet
         public void Algorithm(Generator g)
         {
             g.Sort();
-            int i = 0;
+            int i = 0;  
             while (capacity > g.items[i].Weight && i < g.items.Count()-1 )
             {
                 AddItem(g.items[i]);
