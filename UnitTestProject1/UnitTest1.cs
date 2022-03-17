@@ -33,7 +33,7 @@ namespace UnitTestProject1
         }
 
         [TestMethod]
-        public void Test3()
+        public void Item_test_ValueAndWeight()
         {
             int itemValue = 10;
             int itemWeight = 10;
@@ -47,7 +47,16 @@ namespace UnitTestProject1
         }
 
 
-
+        [TestMethod]
+        public void Generator_test_Sort()
+        {
+            Generator g = new Generator(11, 9);
+            Backpack b = new Backpack();
+            b.Algorithm(g);
+            var result = b.contents.Count;
+            Assert.AreEqual(result, 10);
+            
+        }
 
 
     }

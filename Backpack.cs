@@ -33,7 +33,7 @@ namespace Lab1dotNet
         {
             g.Sort();
             int i = 0;
-            while (capacity > g.items[i].Weight && i < g.items.Count() )
+            while (capacity > g.items[i].Weight && i < g.items.Count()-1 )
             {
                 AddItem(g.items[i]);
                 i++;
